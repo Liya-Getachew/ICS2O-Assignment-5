@@ -19,5 +19,10 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  let text = document.getElementById("userInput").value
+  let reversed = ""
+  for (let counter = text.length - 1; counter >= 0; counter--) {
+    reversed += text[counter]
+  }
+  document.getElementById("answer").innerHTML = reversed
 }
