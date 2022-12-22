@@ -31,14 +31,14 @@
     </noscript>
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      href="https://code.getmdl.io/1.3.0/material.pink-blue.min.css"
       media="none"
       onload="if(media!='all')media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        href="https://code.getmdl.io/1.3.0/material.pink-blue.min.css"
       />
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -56,29 +56,30 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <p id="instructions">Insert any word, phrase, etc. here and watch it get reversed !
         <!-- Textfield with Floating Label -->
         <form action="#">
           <div
             class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
           >
             <input class="mdl-textfield__input" type="text" id="userInput" />
-            <label class="mdl-textfield__label" for="userInput">Text...</label>
+            <label class="mdl-textfield__label" for="userInput"><strong>Let's try...</strong></label>
           </div>
         </form>
         <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
+          src="./images/unorevere.svg"
+          alt="uno reverse card"
+          width="200"
+          height="300"
         />
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Say "Hello, World!"
+          Reverse it!
         </button>
-        <div id="answer"></div>
+        <div id="reverse"></div>
       </main>
     </div>
   </body>

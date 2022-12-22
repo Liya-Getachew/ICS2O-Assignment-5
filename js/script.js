@@ -16,13 +16,14 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function reverses user input.
  */
 function myButtonClicked() {
   let text = document.getElementById("userInput").value
-  let reversed = ""
-  for (let counter = text.length - 1; counter >= 0; counter--) {
-    reversed += text[counter]
+  let reversedText = ""
+  for (let counter = text.length - 1 ; counter >= 0; counter--) {
+    // text.length - 1 takes away the last character
+    reversedText += text[counter] // refers to the character at the end of the string 
   }
-  document.getElementById("answer").innerHTML = reversed
+  document.getElementById("reverse").innerHTML = reversedText + "<br><br>Cool, isn't it?"
 }
