@@ -21,9 +21,10 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   let text = document.getElementById("userInput").value
   let reversedText = ""
-  for (let counter = text.length - 1 ; counter >= 0; counter--) {
+  for (let counter = text.length - 1; counter >= 0; counter--) {
     // text.length - 1 takes away the last character
-    reversedText += text[counter] // refers to the character at the end of the string 
+    reversedText += text[counter] // refers to the character at the end of the string
   }
-  document.getElementById("reverse").innerHTML = reversedText + "<br><br>Cool, isn't it?"
+  document.getElementById("reverse").innerHTML =
+    reversedText + "<br><br>Cool, isn't it?"
 }
