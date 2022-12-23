@@ -22,8 +22,8 @@ function myButtonClicked() {
   let text = document.getElementById("userInput").value
   let reversedText = ""
   for (let counter = text.length - 1; counter >= 0; counter--) {
-    // text.length - 1 takes away the last character
-    reversedText += text[counter] // refers to the character at the end of the string
+    // text.length - 1 gets the last character in text
+    reversedText += text[counter] // refers to the character at the end of text and adds it into reversedText
   }
   document.getElementById("reverse").innerHTML =
     reversedText + "<br><br>Cool, isn't it?"
